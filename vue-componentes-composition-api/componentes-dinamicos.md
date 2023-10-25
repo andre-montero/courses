@@ -52,11 +52,12 @@ Una caracter&iacute;stica de estos estilos es que se aplican de manera global, e
 
 ## Componentes din&aacute;micos
 
-Cuando queremos cargar un componente dependiendo del estado de una variable usamos componentes din&aacute;micos. Para esto Vue nos brinda un componente genérico `<component></component>` y se usa de la siguiente manera:
+Cuando requerimos cambiar entre componentes, por ejemplo en una interfaz de pesta&#241;as, usamos componentes din&aacute;micos. Vue, proporciona un componente genérico `<component></component>`, el cual admite el prop `is` como vemos a continuaci&oacute;n:
 
 ```html
 <template>
-    <component :is="componente"></component>
+    <component :is="componente">
+    </component>
 </template>
 <script>
     import HelloWorld from "./components/HelloWorld.vue";

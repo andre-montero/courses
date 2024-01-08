@@ -24,10 +24,15 @@
       const video = document.querySelector("video");
       const button = document.querySelector("button");
 
-      function MediaPlayer() {}
-      MediaPlayer.prototype.play = () => video.play();
+      function MediaPlayer(config) {
+        this.media = config.el;
+      }
 
-      const player = new MediaPlayer();
+      MediaPlayer.prototype.play = function () {
+        this.media.play();
+      };
+      
+      const player = new MediaPlayer({ el: video });
       button.onclick = () => player.play();
     </script>
   </body>

@@ -1,0 +1,20 @@
+{
+  "author": "andre-montero <monteromarrufoandremartin@gmail.com>",
+  "description": "proyecto del curso profesional de javascript de platzi.",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "keywords": [
+    "cursos",
+    "platzi",
+    "javascript",
+    "profesional"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "media-player",
+  "scripts": {
+    "start": "live-server"
+  },
+  "version": "1.0.0"
+}

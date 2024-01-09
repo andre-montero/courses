@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Media Player</title>
     <!-- <link rel="stylesheet" href="https://necolas.github.io/normalize.css/9.0.1/normalize.css"> -->
-    <link rel="stylesheet" href="./assets/index.css" />
+    <link rel="stylesheet" href="/assets/index.css" />
   </head>
   <body>
     <header>
@@ -14,34 +14,11 @@
     </header>
     <main>
       <video class="movie">
-        <source src="./assets/cupid.mp4" />
+        <source src="/assets/cupid.mp4" />
       </video>
       <br>
       <button>Play/Pause</button>
     </main>
-
-    <script>
-      const video = document.querySelector("video");
-      const button = document.querySelector("button");
-
-      function MediaPlayer(config) {
-        this.media = config.el;
-      }
-
-      MediaPlayer.prototype.play = function () {
-        this.media.play();
-      };
-
-      MediaPlayer.prototype.pause = function () {
-        this.media.pause();
-      };
-
-      MediaPlayer.prototype.paused = function () {
-        return this.media.paused;
-      };
-
-      const player = new MediaPlayer({ el: video });
-      button.onclick = () => (player.paused() ? player.play() : player.pause());
-    </script>
+    <script src="/assets/index.js"></script>
   </body>
 </html>
